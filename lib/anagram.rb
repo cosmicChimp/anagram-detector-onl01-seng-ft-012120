@@ -2,14 +2,15 @@ class Anagram
   
   attr_accessor :word
   
-  def initialize(word)
+    def initialize(word)
     @word = word
-  end
+    end
   
-  def match_array(array_word)
+    def match_array(array_word)
     array_word.select do |array|
     (@word.split("").sort) == (array.split("").sort)
+    end
   end
 end
-  
-end
+
+listen = Anagram.new("listen")
