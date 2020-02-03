@@ -10,5 +10,6 @@ class Anagram
     array_word.select do |array|
     (@word.split("").sort) == (array.split("").sort)
   end
+end
   
 end
